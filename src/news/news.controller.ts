@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 import { NewsService } from 'src/news/news.service';
 
-@Controller('news')
+@Controller('everything')
 export class NewsController {
   constructor(private readonly newsService: NewsService) {}
 
