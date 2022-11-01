@@ -24,10 +24,10 @@ Esta api utiliza a [NewsAPI](https://newsapi.org/) para recuperar os artigos lis
 
 ```bash
 # Clone este repositório
-$ git clone git@github.com:ricciardi305/teste-homologa-o.git
+$ git clone git@github.com:ricciardi305/teste-homologacao.git
 
 # entre na raiz do projeto clonado
-$ cd teste-homologa-o
+$ cd teste-homologacao
 
 # Gere o container no docker (se você ainda não tiver a imagem do node, o docker pode demorar um pouco para inicializar)
 $ sudo docker-compose up --build
