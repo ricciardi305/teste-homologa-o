@@ -6,7 +6,7 @@ import { ArticleInfosDTO } from 'src/dto/articlesInfo.dto';
 import { NewsDTO } from '../dto/news.dto';
 
 @Injectable()
-export class NewsService {
+export class EverythingFilterService {
   private readonly NEWS_API_KEY = process.env.NEWS_API_KEY;
   private readonly NEWS_API_URL = process.env.NEWS_API_URL;
 

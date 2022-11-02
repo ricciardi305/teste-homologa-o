@@ -6,11 +6,13 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
-import { NewsService } from 'src/news/news.service';
+import { EverythingFilterService } from 'src/everything-filter/everything-filter.service';
 
 @Controller('everything')
-export class NewsController {
-  constructor(private readonly newsService: NewsService) {}
+export class EverythingFilterController {
+  constructor(
+    private readonly everythingFilterService: EverythingFilterService,
+  ) {}
 
   @Get()
   getEverythingNews(@Query() query: RequestParamsDto) {
@@ -20,6 +22,6 @@ export class NewsController {
         HttpStatus.BAD_REQUEST,
       );
     }
-    return this.newsService.getEverythingNews(query);
+    return this.everythingFilterService.getEverythingNews(query);
   }
 }
